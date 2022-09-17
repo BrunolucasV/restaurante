@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Baratie </title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/index.css')}}">
+
+    <title>Restaurante Baratie </title>
+    </head>
+    <body>
+        <h1 class="Baratie">
+            Restaurante Baratie
+        </h1>
+        <div class="container">
+            <div class= "menu">
+                <h2 class="menu-gruop-heading">
+                    Entrada
+                </h2>
+                <div class="entrada">    
+
+                <div class="menu-item">
+                    <img src="{{ url_for('static', filename= 'imagen/coquetel-de-camarao.png')}}" alt="comida" class="menu-item-image">
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Coquetel de camarao </span>
+                            <span class="menu-item-price">R$20.00</span>
+                        </h3>
+                        <p class="ingredientes">
+                            {{Coquetel}}
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="{{ url_for('static', filename= 'imagen/nhoque-de-mandioquinha.png')}}" alt="comida" class="menu-item-image">
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Qnhoque de mandioquinha</span>
+                            <span class="menu-item-price">R$15.00</span>
+                        </h3>
+                        <p class="ingredientes">
+                            {{qnhoque}}
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="{{ url_for('static', filename= 'imagen/espetinhos-de-file-mignon-suino.png')}}" alt="comida" class="menu-item-image">
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Espetinhos de file mignon suino </span>
+                            <span class="menu-item-price">R$25.00</span>
+                        </h3>
+                        <p class="ingredientes">
+                            {{espetinhos}}
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="{{ url_for('static', filename= 'imagen/Quibe de batatas com tofu.png')}}" alt="comida" class="menu-item-image">
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Quibe de batatas com tofu </span>
+                            <span class="menu-item-price">R$40.00</span>
+                        </h3>
+                        <p class="ingredientes">
+                            {{Quibe}}
+                        </p>
+                    </div>
+                </div>  
+            
+            </div>
+            <div class="menu">
+                <h2 class="menu-gruop-heading">
+                    Prato principal 
+                </h2>
+                <div class="pratoPrincipal ">
+                    <div class="menu-item">
+                        <img src="{{ url_for('static', filename= 'imagen/curry.png')}}" alt="comida" class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Curry</span>
+                                <span class="menu-item-price">R$80.00</span>
+                            </h3>
+                            <p class="ingredientes">
+                            {{curry}}
+                            </p>
+                        </div>
+                    </div>
+                <div class="menu-item">
+                    <img src="{{ url_for('static', filename= 'imagen/receita-quiche-de-legumes.png')}}" alt="comida" class="menu-item-image">
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Quiche de legumes </span>
+                            <span class="menu-item-price">R$60.00</span>
+                        </h3>
+                        <p class="ingredientes">
+                            {{Quiche}}
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="{{ url_for('static', filename= 'imagen/Risoto de camarão.jpg')}}" alt="comida" class="menu-item-image">
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Risoto de camarão </span>
+                            <span class="menu-item-price">R$120.00</span>
+                        </h3>
+                        <p class="ingredientes">
+                            {{risoto}}
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="{{ url_for('static', filename= 'imagen/escondidinho-vegetariano.png')}}" alt="comida" class="menu-item-image">
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Escondidinho vegetariano</span>
+                            <span class="menu-item-price">R$70.00</span>
+                        </h3>
+                        <p class="ingredientes">
+                            {{escondidinhoVegetariano}}
+                        </p>
+                    </div>
+                </div> 
+                </div>
+            </div>
+        </div>
+        <div class="pratoPrincipal ">
+            <div class="menu-item">
+                <div class="menu-item-text">
+                    <h3 class="menu-item-heading">
+                        <span class="menu-item-name">Horário de funcionamento : de terça a domingo das 18:00 as 2:00 </span>
+                        <span class="menu-item-price">Endereço:xxxxxx</span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    </html>
+    
